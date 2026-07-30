@@ -1,24 +1,87 @@
 aid: koffie-financial
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/koffie-financial.png
 name: Koffie Financial
-description: 'Koffie Financial is a company surfaced as a portfolio company of anthemis and added to the
-  API Evangelist network as a stub for enrichment. Sector: insurtech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Koffie Financial (originally Koffie Labs) was a New York based insurtech managing general
+  agency selling commercial trucking insurance to fleets, brokers and agents. Founded by co-founder and
+  CEO Ian White and co-founder and COO Michael Dorfman, it paired telematics driven underwriting with
+  digital policy servicing, partnering with Samsara on fleet safety data, Sutton National and Boost on
+  underwriting capacity, and Snapsheet on claims. It raised a 4.5 million dollar seed in 2021 and an 11
+  million dollar Series A in 2022 led by Anthemis Group, rebranded from Koffie Labs to Koffie Financial,
+  launched the Koffie Card, and was licensed in states including New York, Georgia, Florida and Tennessee.
+  The company never published a public developer program, API documentation, OpenAPI, or SDKs; its only
+  machine surfaces were private broker and fleet portals. As of July 2026 its web presence is retired.'
 url: https://raw.githubusercontent.com/api-evangelist/koffie-financial/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - anthemis
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-public-api-surface
+x-operating-status: dormant
+x-domain: getkoffie.com
+x-last-verified: '2026-07-19'
+x-enrichment-findings:
+  api_provider: false
+  summary: 'No public API, developer portal, documentation, SDK, or package could be found on any provider
+    surface, live or archived. The company web presence has been retired and the domain now serves an
+    unrelated landing-page template, so no artifact could be produced without fabrication.'
+  evidence:
+  - check: former marketing site paths
+    detail: 'https://getkoffie.com/about-us/ 301, /privacy-policy/ 404, /terms/ 404, /press/ 404, /apply/
+      404, /wp-json/ 404, /sitemap_index.xml 404 — the entire former WordPress site is gone.'
+  - check: live homepage content
+    detail: 'https://getkoffie.com/ returns 200 (HTTP/1.1 only; HTTP/2 apex returns 421 Misdirected Request)
+      but serves an unrelated Indonesian coffee-shop landing page template titled "Koffie — Landing Page"
+      with zero occurrences of "insurance" or "truck".'
+  - check: /.well-known/security.txt
+    detail: https://getkoffie.com/.well-known/security.txt returned 404
+  - check: web archive coverage
+    detail: 'Captures of getkoffie.com run 2020-08 through 2023-12 as the insurtech site, then a gap until
+      2026-05 when the unrelated template appears. Archived paths show only marketing, press, licensing
+      and agency-state pages plus private portals (p., report., safety., uw., uwp., snapsheet.*.getkoffie.com)
+      — no /developers, /docs, /api, or spec of any kind.'
+  - check: domain registration
+    detail: 'getkoffie.com creation date 2017-01-23, updated 2026-03-07, registrar GoDaddy — the domain
+      was never dropped, but its content was replaced.'
+  - check: other candidate domains
+    detail: 'koffie.com, koffie.io and koffie.co are domain-sale parking pages; koffiefinancial.com, koffielabs.com,
+      koffie.ai, withkoffie.com and koffieinsurance.com do not resolve.'
+  - check: package registries and source control
+    detail: 'npm search for "koffie" returns only an unrelated Sass mixin library; no first-party package
+      on PyPI; no Koffie GitHub organization exists (only unrelated personal accounts).'
+  artifacts_skipped_reason: 'Every artifact type in the enrichment contract requires a real provider surface
+    (spec, docs, registry entry, or live host). None exists, so nothing was written rather than fabricated.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Insurtech
+- Insurance
+- Commercial Trucking
+- Fleet Management
+- Underwriting
+- Claims
+- Financial Services
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
