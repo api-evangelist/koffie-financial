@@ -33,6 +33,9 @@ description: 'Koffie Financial (originally Koffie Labs) was a New York based ins
   The company never published a public developer program, API documentation, OpenAPI, or SDKs; its only
   machine surfaces were private broker and fleet portals. As of July 2026 its web presence is retired.'
 url: https://raw.githubusercontent.com/api-evangelist/koffie-financial/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "The company never published a public developer program, API documentation, OpenAPI, or SDKs; its only machine surfaces were private broker and fleet portals."
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
