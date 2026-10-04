@@ -87,7 +87,7 @@ tags:
 - Fleet Management
 - Underwriting
 - Claims
-- Financial-Services
+- Financial Services
 tags_raw:
 - Company
 - Insurtech
@@ -97,6 +97,7 @@ tags_raw:
 - Underwriting
 - Claims
 - Financial Services
+- Financial-Services
 apis: []
 maintainers:
 - FN: Kin Lane
