@@ -64,23 +64,28 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Koffie Financial (originally Koffie Labs) was a New York based insurtech managing general agency selling
-commercial trucking insurance to fleets, brokers and agents. Founded by co-founder and CEO Ian White and
-co-founder and COO Michael Dorfman, it paired telematics driven underwriting with digital policy servicing,
-partnering with Samsara on fleet safety data, Sutton National and Boost on underwriting capacity, and
-Snapsheet on claims. It raised a 4.5 million dollar seed in 2021 and an 11 million dollar Series A in 2022
-led by Anthemis Group, rebranded from Koffie Labs to Koffie Financial, launched the Koffie Card, and was
-licensed in states including New York, Georgia, Florida and Tennessee.
+Koffie Financial (originally Koffie Labs) was a New York based insurtech managing general agency selling commercial trucking insurance to fleets, brokers and agents. Founded by co-founder and CEO Ian White and co-founder and COO Michael Dorfman, it paired telematics driven underwriting with digital policy servicing, partnering with Samsara on fleet safety data, Sutton National and Boost on underwriting capacity, and Snapsheet on claims. It raised a 4.5 million dollar seed in 2021 and an 11 million dollar Series A in 2022 led by Anthemis Group, rebranded from Koffie Labs to Koffie Financial, launched the Koffie Card, and was licensed in states including New York, Georgia, Florida and Tennessee. The company never published a public developer program, API documentation, OpenAPI, or SDKs; its only machine surfaces were private broker and fleet portals. As of July 2026 its web presence is retired.
 
-Backed by: anthemis
+**Areas:** Company · Insurtech · Insurance · Commercial Trucking · Fleet Management · Underwriting · Claims · Financial Services
 
-## Enrichment status
+## Koffie Financial on APIs.io
 
-Not an API provider. Verified 2026-07-19: the company never published a public developer program, API
-documentation, OpenAPI, or SDKs — its only machine surfaces were private broker and fleet portals
-(`p.`, `report.`, `safety.`, `uw.`, `uwp.getkoffie.com`). The web presence at `getkoffie.com` has been
-retired; the former site now returns 404 on every path and the homepage serves an unrelated landing-page
-template. No package exists on npm or PyPI and there is no Koffie GitHub organization.
+Everything profiled for Koffie Financial is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/koffie-financial/](https://apis.io/providers/koffie-financial/)** — or go straight to one of the APIs or properties below.
 
-No artifacts were generated, because producing any would have required fabrication. See
-`x-enrichment-findings` in `apis.yml` for the full evidence trail.
+## API Evangelist rating
+
+**Unrated** — no public website could be reached for this company, so there was almost nothing to measure and nothing a reader could check.
+
+This is not a score of zero. No rating is published for this company. If that is wrong because something public exists that we missed, say so on this repository or email [info@apievangelist.com](mailto:info@apievangelist.com) and it will be re-run — free, and no justification needed.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Koffie Financial: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/koffie-financial/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
